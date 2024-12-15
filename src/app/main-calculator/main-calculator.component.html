@@ -1,1 +1,32 @@
-<p>main-calculator works!</p>
+<div class="content">
+
+  <div class="calculator-border">
+
+    <div class="calculator-screen">
+      <input [(ngModel)]="calculatorInput" readonly>
+
+      <div class="calculator-keyboard">
+        <button (click)="deleteDisplay()" class="top-btn">D</button>
+        <button class="top-btn">+/-</button>
+        <button (click)="appendToDisplay('%')" class="top-btn">%</button>
+        <button (click)="appendToDisplay('/')" class="operator-btn">/</button>
+        <button (click)="appendToDisplay('7')">7</button>
+        <button (click)="appendToDisplay('8')">8</button>
+        <button (click)="appendToDisplay('9')">9</button>
+        <button (click)="appendToDisplay('*')" class="operator-btn">X</button>
+        <button (click)="appendToDisplay('4')">4</button>
+        <button (click)="appendToDisplay('5')">5</button>
+        <button (click)="appendToDisplay('6')">6</button>
+        <button (click)="appendToDisplay('-')" class="operator-btn">-</button>
+        <button (click)="appendToDisplay('1')">1</button>
+        <button (click)="appendToDisplay('2')">2</button>
+        <button (click)="appendToDisplay('3')">3</button>
+        <button (click)="appendToDisplay('+')" class="operator-btn">+</button>
+        <button>T</button>
+        <button (click)="appendToDisplay('0')">0</button>
+        <button (click)="appendToDisplay(',')">,</button>
+        <button (click)="calculation()" class="operator-btn">=</button>
+      </div>
+    </div>
+  </div>
+</div>
